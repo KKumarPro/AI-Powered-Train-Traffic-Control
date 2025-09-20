@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Train Traffic Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI-Powered Train Traffic Control</h1>
+
+        <div class="track-container" id="track-container">
+            <div class="plan-display" id="plan-display" style="display: none;">
+                <h4>AI Optimal Plan:</h4>
+                <p id="plan-text"></p>
+            </div>
+            </div>
+
+        <div class="dashboard">
+            <div class="controls">
+                <h2>Controls</h2>
+                <button id="run-unoptimized-btn">1. Run Normal Simulation</button><br><br>
+                <button id="run-optimized-btn">2. Run AI Optimized Simulation ⚡</button>
+            </div>
+            <div class="kpi">
+                <h2>Live KPIs</h2>
+                <p>Time: <span id="sim-time">00:00</span></p>
+                </div>
+            <div class="results">
+                <h2>Simulation Results</h2>
+                <p>Outcome: <strong id="outcome-status">PENDING</strong></p>
+                <p>Total Delay: <strong id="total-delay">- minutes</strong></p>
+                <p>Throughput: <strong id="throughput">- trains</strong></p>
+            </div>
+            <div class="log">
+                <h2>System Log</h2>
+                <div id="log-messages">
+                    <p>System Initialized. Waiting for simulation...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

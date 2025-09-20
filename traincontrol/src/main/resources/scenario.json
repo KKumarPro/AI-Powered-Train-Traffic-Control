@@ -1,0 +1,33 @@
+{
+  "stations": [
+    { "id": "A", "name": "Station A", "positionKm": 0 },
+    { "id": "M", "name": "Middle Station", "positionKm": 50 },
+    { "id": "B", "name": "Station B", "positionKm": 100 }
+  ],
+  "trains": [
+    {
+      "id": "12801-EXP",
+      "name": "Purushottam Express",
+      "priority": 1,
+      "speedKmph": 80,
+      "currentPositionKm": 0,
+      "status": "RUNNING",
+      "schedule": [
+        { "stationId": "A", "scheduledArrival": "10:00" },
+        { "stationId": "B", "scheduledArrival": "11:15" }
+      ]
+    },
+    {
+      "id": "54321-GOODS",
+      "name": "Goods Carrier",
+      "priority": 3,
+      "speedKmph": 50,
+      "currentPositionKm": 100,
+      "status": "RUNNING",
+      "schedule": [
+        { "stationId": "B", "scheduledArrival": "10:00" },
+        { "stationId": "A", "scheduledArrival": "12:00" }
+      ]
+    }
+  ]
+}
