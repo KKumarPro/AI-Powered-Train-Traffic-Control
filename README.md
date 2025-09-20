@@ -120,4 +120,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ## 🧑‍💻 Author
 
-* **[Your Name]** - [your-github-profile-link]
+* **Karan Kumar** - https://github.com/KKumarPro/
